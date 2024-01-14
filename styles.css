@@ -109,7 +109,7 @@ position: absolute;
 
 /* photo-grid sectio */
 .grid{
-    margin:13.5%;
+    margin:13.5%; 
 }
 .card-container{
    display: grid;
@@ -117,9 +117,37 @@ position: absolute;
 
 }
 .card{
-    background-color: #E02C6D;
+ 
     align-items: center;
     text-align:left;
     margin: 3%;
     padding: 3%;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card img{
+    width: 100%;
+}
+.item-name{
+    color: var(--Text-Gray-900, #18191F);
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 142.857% */
+}
+.price{
+    color: var(--Dark-Color, rgba(0, 0, 0, 0.87));
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+.description{
+    color: var(--Gray-50, #787885);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.252px;
 }
