@@ -106,7 +106,7 @@ position: absolute;
 }
 #banner-cam:hover{
     transform: scale(1.05) rotate(2deg);
-    transition: .5s;
+    transition:ease-in-out  .5s ;
 }
 
 /* Brand logo section */
@@ -116,6 +116,10 @@ position: absolute;
     gap: 60px;
     padding: 43px 0;
     margin:11.5%;
+}
+.brands img:hover{
+    transform: scale(1.5);
+    transition: .5s ease-out;
 }
 
 
@@ -138,6 +142,10 @@ position: absolute;
     padding: 5%;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card:hover{
+    transform: translate(0px,-10px) scale(1.02);
+    transition: ease-in-out .2s;
 }
 .card img{
     width: 100%;
@@ -244,5 +252,12 @@ line-height: 40px; /* 142.857% */
         display: flex;
         margin: 20px 10px;
     }
-    
+    .brands img:hover{
+        transform: none;
+        transition:none;
+    }
+    .card:hover{
+        transform: none;
+        transition: none;
+    }
 }
