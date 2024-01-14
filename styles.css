@@ -34,7 +34,7 @@ margin-left: 34px;
 }
 nav img{
     width: 24px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 
 
@@ -74,12 +74,20 @@ margin-top: 104px;
     color: white;
     font-weight: 700;
     border: none;
+    cursor: pointer;
 }
 
+.button1:active{
+    transform: scale(0.95);
+    transition: .05;
+
+
+}
 .banner-image{
     position: relative;
     /* background-color: #E02C6D; */
     /* width: 50%; */
+    display: flex;
     justify-content: center;
 }
 #camera-back{
@@ -96,6 +104,10 @@ margin-top: 104px;
 position: absolute;
 
 }
+#banner-cam:hover{
+    transform: scale(1.05) rotate(2deg);
+    transition: .5s;
+}
 
 /* Brand logo section */
 .brands{
@@ -109,17 +121,20 @@ position: absolute;
 
 /* photo-grid sectio */
 .grid{
-    margin: 0 13.5%; 
+    margin: 0 13%; 
+  
+   
 }
 .card-container{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-
+   justify-content: center;
+   gap: 0.5%;
 }
 .card{
     align-items: center;
     text-align:left;
-    margin: 5%;
+    margin: 5px;
     padding: 5%;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -157,35 +172,77 @@ line-height: 40px; /* 142.857% */
 
 
 
-@media screen and (max-width : 360px) {
+@media screen and (max-width : 576px) {
     body{
-        margin: 0;
+        margin: 5px;
     }
     nav{
         flex-direction: column;
-        justify-content: center;
-        margin:0;
     }
 
     .nav-butons{
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        margin:0;
+       
     }
+    nav a{
+        margin:5px auto;
+    }
+ 
     .banner{
     flex-direction: column-reverse;
     width: 100%;
+    margin: 0;
     }
     .brands{
         flex-wrap: wrap;
+        margin: 0 20px;
     }
     .grid{
-        margin: 0 30px;
+        margin: 10px;
+    }
+    .grid h3{
+        text-align: center;
     }
     .card-container{
         grid-template-columns: 1fr;
+        text-align: center;
+    
     }
     .card{
-        margin: 5px
+        margin: 0px;
     }
-        
+    .left-text{
+        margin: 0;
+        padding: 5%;
+    }
+    .left-text h1{
+    font-size: 38px;
+    line-height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    }
+    .para-text{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .button1{
+        text-align: center;
+    }
+    #camera-back, #banner-cam{
+        width: 90%;
+               
+    }
+    .banner-image{
+        justify-content: center;
+        display: flex;
+        margin: 20px 10px;
+    }
+    
 }
